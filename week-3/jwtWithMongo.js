@@ -6,9 +6,9 @@ const jwtPassword = "123456";
 const app = express();
 app.use(express.json());
 
-mongoose.connect(
-  "mongodb+srv://admin:2Bm3DAmD9FNaaGrr@cluster0.0fogwws.mongodb.net/"
-);
+// mongoose.connect(
+//   "/"
+// );
 
 
 
