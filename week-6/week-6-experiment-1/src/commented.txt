@@ -1,0 +1,70 @@
+// const [name, setName] = useState("harkirat");
+  // const changeName = () => {
+  //   setName(Math.random());
+  // };
+
+  // return (
+  //   <div>
+  //     {/* <HeaderWithButton /> */}
+  //     <button onClick={changeName}>click me to change the name</button>
+  //     <Header title={`my name is ${name}`} />
+  //     <Header title={"my name is raman"} />
+  //     <Header title={"my name is yunus"} />
+  //     <Header title={"my name is yunus"} />
+  //     <Header title={"my name is yunus"} />
+  //   </div>
+  // );
+
+  // let count = 4;
+
+  // const [todos, setTodos] = useState([
+  //   {
+  //     id: 1,
+  //     title: "go to gym",
+  //     description: "Go to the gym at 7",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "go to gym",
+  //     description: "Go to the gym at 7",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "go to gym",
+  //     description: "Go to the gym at 7",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "go to gym",
+  //     description: "Go to the gym at 7",
+  //   },
+  // ]);
+
+  // const addTodo = () => {
+  //   setTodos([
+  //     ...todos,
+  //     {
+  //       id: count++,
+  //       title: "new todo",
+  //       description: "this is the newest todo",
+  //     },
+  //   ]);
+  // };
+
+  // return (
+  //   <div>
+  //     <button onClick={addTodo}>Add a todo</button>
+  //     {todos.map((todo) => (
+  //       <Todo title={todo.title} description={todo.description} key={todo.id} />
+  //     ))}
+  //   </div>
+  // );
+
+
+
+//   return (
+//     <>
+//       <button onClick={changeName}>click me to change the name</button>
+//       <Header title={`my name is ${name}`} />
+//     </>
+//   );
