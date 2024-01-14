@@ -1,0 +1,46 @@
+<BrowserRouter>
+        <Appbar />
+        <Routes>
+          <Route path="/" element={<Suspense fallback={'Loading......'}><Landing /></Suspense>} />
+          <Route path="/dashboard" element={<Suspense fallback={'loading'}><Dashboard /></Suspense>} />
+        </Routes>
+      </BrowserRouter>
+
+
+
+
+      import {
+//   BrowserRouter,
+//   Navigate,
+//   Route,
+//   Routes,
+//   useNavigate,
+// } from "react-router-dom";
+// const Dashboard = lazy(() => import("./components/Dashboard"));
+// const Landing = lazy(() => import("./components/Landing"));
+
+
+
+
+// function Appbar() {
+//   const navigate = useNavigate();
+
+//   return (
+//     <div>
+//       <button
+//         onClick={() => {
+//           navigate("/dashboard");
+//         }}
+//       >
+//         Dashboard
+//       </button>
+//       <button
+//         onClick={() => {
+//           navigate("/");
+//         }}
+//       >
+//         Landing
+//       </button>
+//     </div>
+//   );
+// }
