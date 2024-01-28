@@ -27,6 +27,7 @@ function SignUp() {
                 First Name
               </label>
               <input
+                required
                 type="text"
                 id="firstName"
                 name="firstName"
@@ -42,6 +43,7 @@ function SignUp() {
                 Last Name
               </label>
               <input
+                required
                 type="text"
                 id="lastName"
                 name="lastName"
@@ -57,6 +59,7 @@ function SignUp() {
                 Email
               </label>
               <input
+                required
                 type="email"
                 id="username"
                 name="username"
@@ -72,6 +75,7 @@ function SignUp() {
                 Password
               </label>
               <input
+                required
                 type="password"
                 id="password"
                 name="password"

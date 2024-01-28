@@ -1,7 +1,10 @@
 import React from "react";
 import UserIcon from "./UserIcon";
 
-function User({ user }) {
+function User({ user, userId }) {
+
+  const id = userId;
+  
   return (
     <>
     <div className="w-full flex justify-between">

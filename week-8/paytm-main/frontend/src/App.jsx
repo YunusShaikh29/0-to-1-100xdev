@@ -4,6 +4,7 @@ import SignIn from "./components/SignIn";
 import Dashboard from "./components/Dashboard";
 import signupAction from "./pages/SignupPage"
 import SigninPage, {action as signinAction} from "./pages/SigninPage";
+import DashboardPage, {loader as dashboardData} from "./pages/DashboardPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,7 +17,8 @@ function App() {
     },
     {
       path: "/dashboard",
-      element: <Dashboard />
+      element: <DashboardPage />,
+      loader: dashboardData
     }
   ]);
 
