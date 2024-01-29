@@ -6,6 +6,7 @@ import { getAuthToken } from "../util/Auth";
 import useDebounce from "../Hooks/Debounce";
 import { Form } from "react-router-dom";
 import axios from "axios";
+import User from "./User/User";
 // import e from "express";
 
 // const token = getAuthToken();
@@ -21,20 +22,19 @@ function Dashboard({ users, user, balance }) {
     .charAt(0)
     .toUpperCase()}${user.lastName.slice(1)}`;
 
+
   useEffect(() => {
     axios
       .get(`http://localhost:7070/api/v1/user/bulk?filter=${debouncedFilter}`)
-      .then(
-        (response) => {
-          if (filter.length === 0) {
-            setUsersArr(users);
-          } else {
-            setUsersArr(response.data.user);
-          }
-        },
-        [filter]
-      );
-  });
+      .then((response) => {
+        if (filter.length === 0) {
+          setUsersArr(users);
+        } else {
+          setUsersArr(response.data.user);
+        }
+      });
+  }, [filter, debouncedFilter, users]);
+
 
   return (
     <div className="container">
@@ -60,7 +60,8 @@ function Dashboard({ users, user, balance }) {
           onChange={(e) => setFilter(e.target.value)}
         />
         <div className="my-8">
-          <UserList users={usersArr} />
+          {/* <UserList users={usersArr} /> */}
+          {usersArr.map((user) => <User user={user} userId={user._id}/>)}
         </div>
       </div>
     </div>

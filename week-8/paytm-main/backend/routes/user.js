@@ -167,6 +167,7 @@ router.get("/bulk", async (req, res) => {
         username: user.username,
         firstName: user.firstName,
         lastName: user.lastName,
+        id: user._id
       })),
     });
   } catch (err) {

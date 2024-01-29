@@ -1,10 +1,11 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import SignUp from "./components/SignUp";
-import SignIn from "./components/SignIn";
-import Dashboard from "./components/Dashboard";
+// import SignIn from "./components/SignIn";
+// import Dashboard from "./components/Dashboard";
 import signupAction from "./pages/SignupPage"
 import SigninPage, {action as signinAction} from "./pages/SigninPage";
 import DashboardPage, {loader as dashboardData} from "./pages/DashboardPage";
+import TransferModal, {action as TransferAction } from "./components/TransferModal";
 
 function App() {
   const router = createBrowserRouter([
@@ -19,14 +20,15 @@ function App() {
       path: "/dashboard",
       element: <DashboardPage />,
       loader: dashboardData
+    },
+    {
+      path: "/transfer",
+      element: <TransferModal />,
+      action: TransferAction
     }
   ]);
 
   return (
-    // <div className="text-3xl font-bold bg-black text-white">
-    //     Hello world
-    //     <SignUP />
-    // </div>
     <RouterProvider router={router} />
   );
 }

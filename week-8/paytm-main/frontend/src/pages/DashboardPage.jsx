@@ -37,9 +37,11 @@ export const loadData = async () => {
     },
   });
   const data = await response.json();
+  // window.location.reload()
   return data;
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const loader = () => {
   return defer({
     data: loadData(),
