@@ -41,7 +41,7 @@ function Dashboard({ users, user, balance }) {
       <div className="w-full px-8 py-4">
         <div className="w-full flex justify-between mb-6">
           <h1 className="text-white text-4xl font-[700]">Payment App</h1>
-          <div className="text-white text-2xl font-[400] flex justify-between gap-4">
+          <div className="text-white text-2xl font-[400] flex justify-between gap-4 items-center">
             Hello, {combinedName} <UserIcon user={combinedName} />
           </div>
         </div>
