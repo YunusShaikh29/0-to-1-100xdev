@@ -1,5 +1,5 @@
 {
-  "name": "my-bun-terborepo",
+  "name": "my-bun-turborepo",
   "private": true,
   "scripts": {
     "build": "turbo build",
